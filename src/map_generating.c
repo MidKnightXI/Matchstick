@@ -4,7 +4,8 @@
 ** File description:
 ** map_generating.c
 */
-#include "../include/struct.h"
+#include "my.h"
+#include "struct.h"
 #include <stdlib.h>
 
 void display_stars(s_t *s)

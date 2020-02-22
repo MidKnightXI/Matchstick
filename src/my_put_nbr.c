@@ -4,6 +4,7 @@
 ** File description:
 ** my_put_nbr
 */
+#include "my.h"
 #include <unistd.h>
 
 void my_putnbr(int nb)

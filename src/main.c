@@ -4,7 +4,8 @@
 ** File description:
 ** main.c
 */
-#include "../include/struct.h"
+#include "my.h"
+#include "struct.h"
 #include <stdio.h>
 #include <stdlib.h>
 
@@ -16,6 +17,7 @@ int init_int(s_t *s, int i)
         return (s->row[i - 1] + 2);
     }
 }
+
 void attribute_values(char **av, s_t *s)
 {
     s->lines = my_getnbr(av[1]);
@@ -27,12 +29,14 @@ void attribute_values(char **av, s_t *s)
         s->row[i] = init_int(s, i);
     }
 }
+
 int check_error(s_t *s)
 {
     if (s->lines <= 1 || s->lines > 100)
         return 84;
     return 0;
 }
+
 int main(int ac, char **av)
 {
     s_t *s = malloc(sizeof (s_t));

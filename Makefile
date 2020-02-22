@@ -21,7 +21,6 @@ OBJ-CRIT	=	$(SRC-CRIT:$(EXTENSION)=.o)
 
 
 NCURSFLAGS	+=	-lncurses
-CPPFLAGS	+=	-Wall -Wextra -fPIC
 LDFLAGS		+=	-g3
 CFLAGS		+=	-Iinclude -fno-builtin -g3
 CXXFLAGS	+=	-IInclude -fno-builtin
